@@ -1,0 +1,38 @@
+{
+  "name": "node-fetch-retrier",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "type": "commonjs",
+  "files": [
+    "dist/"
+  ],
+  "types": "dist/@types",
+  "scripts": {
+    "build": "tsc",
+    "test": "ts-node test.js"
+  },
+  "keywords": [
+    "fetch",
+    "retry",
+    "fetch-retry",
+    "retry-logic",
+    "http-client"
+  ],
+  "author": "Fredrik Olander <fredrikolander@golfbyolan.se>",
+  "license": "ISC",
+  "description": "A Node.js utility for performing fetch requests with customizable retry logic. Supports exponential backoff, error handling, and dynamic settings.",
+  "dependencies": {
+    "form-data": "^4.0.1",
+    "node-fetch": "^2.7.0",
+    "undici": "^7.1.0",
+    "xml2js": "^0.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/node-fetch": "^2.6.12",
+    "@types/xml2js": "^0.4.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
